@@ -220,8 +220,8 @@ footer .footer__icons .footer__icon i {
   .main__about p {
     display: grid;
     place-items: center;
-    height: 240px;
-    width: 310px;
+    height: 240px !important;
+    width: 310px !important;
   }
 }
 .hero__contact {
@@ -315,24 +315,43 @@ footer .footer__icons .footer__icon i {
   .hero__text {
     font-size: 24px;
   }
-}
-@media only screen and (max-width: 425px) {
   .main__contact {
-    max-width: 335px;
-    min-height: 740px;
+    max-width: 100%;
+    padding: 0 20px;
   }
-  .main__contact .contact__text {
-    min-height: 120px;
-    max-width: 310px;
+  .main_contact .contact_text {
+    max-width: 100%;
   }
   .main__contact .form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
-  .main__contact .form #input {
-    height: 310px !important;
-    width: 80% !important;
+  .main__contact .form input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .main__contact {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .main_contact .contact_text {
+    max-width: 100%;
+  }
+  .main__contact .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .main__contact .form input {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .hero__sample {
